@@ -1,0 +1,83 @@
+/* pseudo: false     */
+   a:link {
+	color: #fe0707;
+}  
+    a:visited { 
+	color: green;
+}  
+   p:hover { 
+	background-color: rgb(65, 9, 208);
+}  
+ 
+  p:active {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}     
+
+
+.second-section {
+	font-family: Arial, Helvetica, sans-serif ;
+}
+
+section:not(.second-section) {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+li:nth-child(2n+1) {  
+	/* An+B: A is the step size and B is the offset */
+   background-color: yellow;
+}
+li:nth-child(2n+2){
+	background-color: greenyellow 
+}
+section:nth-child(1n+1) { 
+	  /* An+B: A is the step size and B is the offset  */
+	 color: blue;
+}
+ 
+button:active {
+	background-color: rgb(43, 33, 157);
+	border: 1px darkblue dotted;
+	border-radius: 10px;
+}
+  *:focus {
+	border: red solid 5px
+}  
+*::after{
+	border: aqua;
+}
+  
+p:nth-of-type(3) {
+	background-color: silver;
+}
+
+li::marker {
+	font-weight: bold;
+}
+
+li::before {
+	content: ">>>";
+}
+  
+section::first-letter {
+	font-size: 20px;
+}
+
+p::first-line {
+	font-size: x-large;
+}
+ 
+#image-play {
+     height: 300px;
+	  width: 800px; 
+	 background-image: url("resources/FavitesCoral.jpg");  
+	  background-image: url(https://th.bing.com/th/id/R.1395d1b17397018e6916784c283a14f2?rik=bmfmSW7odc2D1A&pid=ImgRaw&r=0);
+      background-size: contain;
+	background-position: bottom right;
+	background-repeat: repeat-y;
+	background-color: cornflowerblue;   
+
+	 border: 15px dashed yellow;    
+	padding: 50px;
+	 margin: 10px; 
+	background-clip: border-box;  
+}  
